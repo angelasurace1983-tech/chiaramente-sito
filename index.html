@@ -30,7 +30,8 @@
     section{padding:36px 0}
     .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
     .card{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.0));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
-    .cover{width:100%;height:clamp(220px,28vw,360px);background:#0f1632 center/cover no-repeat;border-bottom:1px solid rgba(255,255,255,.06)}
+    .cover{width:100%;height:clamp(220px,28vw,360px);border-bottom:1px solid rgba(255,255,255,.06);background:#0f1632}
+    .cover img{width:100%;height:100%;object-fit:cover;display:block}
     .meta{padding:14px}
     .meta h3{margin:0 0 6px 0;font-size:18px}
     .meta p{margin:0 0 12px 0;color:var(--muted);font-size:14px}
@@ -66,7 +67,9 @@
 
       <!-- LIBRO 1 -->
       <article class="card">
-        <div class="cover" style="background-image:url('./libro1.jpg')" aria-label="Copertina Libro 1"></div>
+        <div class="cover" aria-label="Copertina Libro 1">
+          <img src="./libro1.jpg" alt="Copertina Libro 1">
+        </div>
         <div class="meta">
           <h3>⟪ TITOLO LIBRO #1 ⟫</h3>
           <p>Desire, discovery, the dangerous thrill of surrender: who watches, and who dares to be seen?<br>
@@ -83,7 +86,9 @@
 
       <!-- LIBRO 2 -->
       <article class="card">
-        <div class="cover" style="background-image:url('./libro2.jpg')" aria-label="Copertina Libro 2"></div>
+        <div class="cover" aria-label="Copertina Libro 2">
+          <img src="./libro2.jpg" alt="Copertina Libro 2">
+        </div>
         <div class="meta">
           <h3>⟪ TITOLO LIBRO #2 ⟫</h3>
           <p>Between power and yielding, skin tells what words refuse: pleasure that wounds and then cures.<br>
@@ -100,7 +105,9 @@
 
       <!-- LIBRO 3 -->
       <article class="card">
-        <div class="cover" style="background-image:url('./libro3.jpg')" aria-label="Copertina Libro 3"></div>
+        <div class="cover" aria-label="Copertina Libro 3">
+          <img src="./libro3.jpg" alt="Copertina Libro 3">
+        </div>
         <div class="meta">
           <h3>⟪ FIRST HIM, THEN THE OTHER...AND FINALLY YOU. ⟫</h3>
           <p>An innocent glance ignites an obsession: two lives on a collision course with pleasure and peril.<br>
@@ -125,6 +132,15 @@
       <p><strong>Chiara Mente</strong> è nata a Torino il 30 giugno 1984, ma ha imparato presto che il vero luogo in cui si cresce è dentro le proprie cicatrici. Scrive libri che profumano di vita vera, perché ha vissuto abbastanza da sapere che ogni ferita porta con sé una storia, e ogni storia può diventare salvezza.</p>
       <p>Nei suoi racconti si parla d’amore, ma non quello da copertina: il suo è l’amore che resta quando tutto il resto crolla. È quello che si trova dentro una rottura, un addio, una seconda possibilità. Le sue parole parlano a chi ha amato troppo, a chi è stato dimenticato, a chi ha ricominciato da sé.</p>
       <p>Chiara crede che anche il cuore più spezzato meriti di rinascere. E che l’amore – quello vero – spesso arrivi proprio quando smettiamo di cercarlo e iniziamo a ritrovarci.</p>
+    </div>
+    <div class="card" style="padding:18px">
+      <h3>Estratti gratuiti</h3>
+      <ul>
+        <li><a href="./libro1-estratto.pdf" target="_blank" rel="noopener">Estratto Libro #1 (PDF)</a></li>
+        <li><a href="./libro2-estratto.pdf" target="_blank" rel="noopener">Estratto Libro #2 (PDF)</a></li>
+        <li><a href="./libro3-estratto.pdf" target="_blank" rel="noopener">Estratto Libro #3 (PDF)</a></li>
+      </ul>
+      <p class="note">I PDF devono essere nella radice del sito con questi nomi esatti.</p>
     </div>
   </section>
 
