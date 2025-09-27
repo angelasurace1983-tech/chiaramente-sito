@@ -4,10 +4,13 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Libri di CHIARA MENTE – Sito ufficiale</title>
-  <meta name="description" content="Catalogo, estratti e acquisto dei libri di CHIARA MENTE. Sito gratuito, semplice e veloce." />
+  <meta name="description" content="Catalogo, estratti e link di acquisto dei libri di CHIARA MENTE.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>📖</text></svg>">
   <style>
-    :root{ --bg:#0b1020; --panel:#111833; --accent:#7bd8ff; --accent2:#a6ffb8; --text:#eaf2ff; --muted:#b8c2d9; --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35)}
+    :root{
+      --bg:#0b1020; --panel:#111833; --accent:#7bd8ff; --accent2:#a6ffb8;
+      --text:#eaf2ff; --muted:#b8c2d9; --radius:18px; --shadow:0 10px 30px rgba(0,0,0,.35)
+    }
     *{box-sizing:border-box}
     html,body{margin:0;background:radial-gradient(1200px 600px at 20% -10%, #1b244a 0%, transparent 60%),linear-gradient(180deg,#0b1020,#0a0f1d);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Ubuntu,sans-serif}
     a{color:var(--accent)}
@@ -19,9 +22,10 @@
     nav a{text-decoration:none;opacity:.9}
     .hero{display:grid;gap:18px;padding:48px 0}
     .hero h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0}
-    .hero p{font-size:clamp(16px,2.8vw,19px);color:var(--muted);margin:0}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-size:12px;color:var(--muted)}
     .cta{display:flex;gap:12px;flex-wrap:wrap}
     .btn{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#0b1020;border:none;border-radius:14px;padding:12px 18px;font-weight:700;cursor:pointer;box-shadow:var(--shadow);text-decoration:none}
+    .btn.sm{padding:10px 12px;font-size:14px;border-radius:12px}
     .ghost{background:transparent;border:1px solid rgba(255,255,255,.2);color:var(--text)}
     section{padding:36px 0}
     .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
@@ -34,8 +38,6 @@
     @media(min-width:860px){.grid-2{grid-template-columns:1.1fr .9fr}}
     footer{border-top:1px solid rgba(255,255,255,.08);color:var(--muted);padding-bottom:48px}
     .note{font-size:12px;color:var(--muted)}
-    .badge{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(255,255,255,.2);font-size:12px;color:var(--muted)}
-    .author{opacity:.9}
   </style>
 </head>
 <body>
@@ -52,11 +54,7 @@
     </div>
     <div class="hero">
       <span class="badge">Sito gratuito</span>
-      <h1>Narrativa che punge e accarezza: i libri di <span class="author">CHIARA MENTE</span></h1>
-      <div class="cta">
-        <a class="btn" href="#libri">Sfoglia i libri</a>
-        <a class="btn ghost" href="#contatti">Scrivimi</a>
-      </div>
+      <h1>Narrativa che punge e accarezza: i libri di CHIARA MENTE</h1>
     </div>
   </div>
 </header>
@@ -65,81 +63,82 @@
   <section id="libri">
     <h2>I libri</h2>
     <div class="cards">
+
       <!-- LIBRO 1 -->
       <article class="card">
-        <div class="cover" style="background-image:url('./libro1.jpg')"
-href="./libro1-estratto.pdf" aria-label="Copertina Libro 1"></div>
+        <div class="cover" style="background-image:url('./libro1.jpg')" aria-label="Copertina Libro 1"></div>
         <div class="meta">
-          <h3>⟪ PRIMA LUI, POI L'ALTRO...E INFINE TU. ⟫</h3>
-          <p>Tre uomini, tre direzioni. Un cuore in disordine e mille domande.<br>
-Una voce cerca la sua verità tra desiderio e silenzi, imparando a scegliere sé stessa quando le scelte non sono mai davvero libere.<br>
-<em>Per tutte le donne che hanno imparato a scegliersi, anche quando la strada fa male.</em></p>
-</p>
+          <h3>⟪ TITOLO LIBRO #1 ⟫</h3>
+          <p>Desire, discovery, the dangerous thrill of surrender: who watches, and who dares to be seen?<br>
+          When intimacy is raw and real, being truly seen becomes the most scandalous freedom.<br>
+          <em>“To all the women who have learned to choose themselves, even when the road was not an easy one.”</em></p>
           <div class="cta">
-            <a class="btn" target="_blank" href="https://www.amazon.it/dp/B0F842KP4K">Acquista - Amazon</a>
-            <a class="btn" target="_blank" href="https://www.kobo.com/it/it/ebook/prima-lui-poi-l-altro-infine-tu?sId=12c4e1cd-efe7-4015-9d93-d6d468b2da96&ssId=QewCAEPPYlC-nBZeSfSFY&cPos=1">Acquista - Kobo</a>
-            <a class="btn" target="_blank" href="https://books.google.it/books/about?id=vGOHEQAAQBAJ&redir_esc=y">Acquista - Google Libri</a>
-            <a class="btn ghost" target="_blank" href="./estratti/libro1-estratto.pdf">Estratto (PDF)</a>
+            <a class="btn sm" target="_blank" rel="noopener" href="#">eBook – Payhip</a>
+            <a class="btn sm" target="_blank" rel="noopener" href="#">Kindle – Amazon</a>
+            <a class="btn sm" target="_blank" rel="noopener" href="#">Paperback – Amazon</a>
+            <a class="btn ghost sm" target="_blank" rel="noopener" href="./libro1-estratto.pdf">Estratto (PDF)</a>
           </div>
         </div>
       </article>
+
       <!-- LIBRO 2 -->
       <article class="card">
-        <div class="cover" style="background-image:url('./libro2.jpg')"
-href="./libro2-estratto.pdf" aria-label="Copertina Libro 2"></div>
+        <div class="cover" style="background-image:url('./libro2.jpg')" aria-label="Copertina Libro 2"></div>
         <div class="meta">
-          <h3>⟪ AVEVA IL SAPORE DELL'ETERNITÀ.  ⟫</h3>
-          <p>Piccoli gesti, grandi emozioni: il quotidiano si fa eccezionale e ogni sguardo pesa come una promessa.<br>
-Leggerla è tornare a quando tutto era assoluto, irripetibile, urgente.<br>
-<em>A chi ha amato troppo presto e troppo forte: questa storia è per voi. E per me.</em></p>
-</p>
+          <h3>⟪ TITOLO LIBRO #2 ⟫</h3>
+          <p>Between power and yielding, skin tells what words refuse: pleasure that wounds and then cures.<br>
+          A raw, intimate journey where truth is whispered only to those who dare to listen.<br>
+          <em>“To all the women who have learned to choose themselves, even when the road was not an easy one.”</em></p>
           <div class="cta">
-            <a class="btn" target="_blank" href="https://www.amazon.it/dp/B0F858F1QR">Acquista - Amazon</a>
-            <a class="btn" target="_blank" href="https://www.kobo.com/it/it/ebook/aveva-il-sapore-dell-eternita?sId=a14e52b2-6243-459d-8ca4-9b59e85d1e1a&ssId=Dsu6OLFm5t37lvcQwHafg&cPos=1">Acquista - Kobo</a>
-            <a class="btn ghost" target="_blank" href="./estratti/libro2-estratto.pdf">Estratto (PDF)</a>
+            <a class="btn sm" target="_blank" rel="noopener" href="#">eBook – Payhip</a>
+            <a class="btn sm" target="_blank" rel="noopener" href="#">Kindle – Amazon</a>
+            <a class="btn sm" target="_blank" rel="noopener" href="#">Paperback – Amazon</a>
+            <a class="btn ghost sm" target="_blank" rel="noopener" href="./libro2-estratto.pdf">Estratto (PDF)</a>
           </div>
         </div>
       </article>
+
       <!-- LIBRO 3 -->
       <article class="card">
-        <div class="cover" style=style="background-image:url('./libro3.jpg')"
-href="./libro3-estratto.pdf" aria-label="Copertina Libro 3"></div>
+        <div class="cover" style="background-image:url('./libro3.jpg')" aria-label="Copertina Libro 3"></div>
         <div class="meta">
           <h3>⟪ FIRST HIM, THEN THE OTHER...AND FINALLY YOU. ⟫</h3>
           <p>An innocent glance ignites an obsession: two lives on a collision course with pleasure and peril.<br>
-Beneath the surface, power and vulnerability hunt each other—hurting, then healing.<br>
-<em>“To all the women who have learned to choose themselves, even when the road was not an easy one.”</em></p>
-</p>
+          Beneath the surface, power and vulnerability hunt each other—hurting, then healing.<br>
+          <em>“To all the women who have learned to choose themselves, even when the road was not an easy one.”</em></p>
           <div class="cta">
-            <a class="btn" target="_blank" href="https://www.amazon.co.uk/dp/B0FC61FCZC">Acquista - Amazon UK</a>
-            <a class="btn" target="_blank" href="https://www.kobo.com/it/it/ebook/first-him-than-the-other-and-finally-you?sId=7e3066ec-1339-4061-b67a-f86616c4bd34&ssId=-fedgagi64My7DzLgMVWH&cPos=1">Acquista - Kobo</a>
-            <a class="btn" target="_blank" href="https://books.google.it/books/about?id=nmmHEQAAQBAJ&redir_esc=y">Acquista - Google Libri</a>
-            <a class="btn ghost" target="_blank" href="./estratti/libro3-estratto.pdf">Estratto (PDF)</a>
+            <a class="btn sm" target="_blank" rel="noopener" href="https://www.amazon.co.uk/dp/B0FC61FCZC">Acquista – Amazon UK</a>
+            <a class="btn sm" target="_blank" rel="noopener" href="https://www.kobo.com/it/it/ebook/first-him-than-the-other-and-finally-you?sId=7e3066ec-1339-4061-b67a-f86616c4bd34&ssId=-fedgagi64My7DzLgMVWH&cPos=1">Acquista – Kobo</a>
+            <a class="btn sm" target="_blank" rel="noopener" href="https://books.google.it/books/about?id=nmmHEQAAQBAJ&redir_esc=y">Acquista – Google Libri</a>
+            <a class="btn ghost sm" target="_blank" rel="noopener" href="./libro3-estratto.pdf">Estratto (PDF)</a>
           </div>
         </div>
       </article>
+
     </div>
-    <p class="note">
+    <p class="note">Se un link d’acquisto non ti serve, puoi toglierlo: il sito funziona lo stesso.</p>
+  </section>
 
   <section id="autrice" class="grid-2">
     <div>
       <h2>L’autrice</h2>
-<p><strong>Chiara Mente</strong> è nata a Torino il 30 giugno 1984, ma ha imparato presto che il vero luogo in cui si cresce è dentro le proprie cicatrici. Scrive libri che profumano di vita vera, perché ha vissuto abbastanza da sapere che ogni ferita porta con sé una storia, e ogni storia può diventare salvezza.</p>
+      <p><strong>Chiara Mente</strong> è nata a Torino il 30 giugno 1984, ma ha imparato presto che il vero luogo in cui si cresce è dentro le proprie cicatrici. Scrive libri che profumano di vita vera, perché ha vissuto abbastanza da sapere che ogni ferita porta con sé una storia, e ogni storia può diventare salvezza.</p>
+      <p>Nei suoi racconti si parla d’amore, ma non quello da copertina: il suo è l’amore che resta quando tutto il resto crolla. È quello che si trova dentro una rottura, un addio, una seconda possibilità. Le sue parole parlano a chi ha amato troppo, a chi è stato dimenticato, a chi ha ricominciato da sé.</p>
+      <p>Chiara crede che anche il cuore più spezzato meriti di rinascere. E che l’amore – quello vero – spesso arrivi proprio quando smettiamo di cercarlo e iniziamo a ritrovarci.</p>
+    </div>
+  </section>
 
-<p>Nei suoi racconti si parla d’amore, ma non quello da copertina: il suo è l’amore che resta quando tutto il resto crolla. È quello che si trova dentro una rottura, un addio, una seconda possibilità. Le sue parole parlano a chi ha amato troppo, a chi è stato dimenticato, a chi ha ricominciato da sé.</p>
-
-<p>Chiara crede che anche il cuore più spezzato meriti di rinascere. E che l’amore – quello vero – spesso arrivi proprio quando smettiamo di cercarlo e iniziamo a ritrovarci.</p>
-</div>
-  
   <section id="contatti">
     <h2>Contatti</h2>
     <p>Per presentazioni, podcast, collaborazioni o diritti:</p>
     <ul>
-      <p>
-  <a class="btn ghost" href="mailto:chiara.mente.giugno84@gmail.com">✉️ Email</a>
-  <a class="btn" href="https://www.facebook.com/profile.php?id=61581271733166" target="_blank" rel="noopener noreferrer">📘 Facebook</a>
-</p>
+      <li>Email: <a href="mailto:chiara.mente.giugno84@gmail.com">chiara.mente.giugno84@gmail.com</a></li>
+      <li>Facebook: <a href="https://www.facebook.com/profile.php?id=61581271733166" target="_blank" rel="noopener">Chiara Mente – Facebook</a></li>
     </ul>
+    <p>
+      <a class="btn ghost" href="mailto:chiara.mente.giugno84@gmail.com">✉️ Email</a>
+      <a class="btn" href="https://www.facebook.com/profile.php?id=61581271733166" target="_blank" rel="noopener">📘 Facebook</a>
+    </p>
   </section>
 </main>
 
@@ -148,6 +147,8 @@ Beneath the surface, power and vulnerability hunt each other—hurting, then hea
     <p>© <span id="y"></span> CHIARA MENTE. Tutti i diritti riservati. <span class="note">Sito statico gratuito.</span></p>
   </div>
 </footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script>
+  document.getElementById('y').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
